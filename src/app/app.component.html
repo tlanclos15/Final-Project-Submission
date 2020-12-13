@@ -1,0 +1,13 @@
+<a href="#main" class="skip">Skip to content</a>
+<pb-menu></pb-menu>
+<div *ngIf="isAuthenticated">
+  <h2>Hi, {{user?.name}}!</h2>
+  <button (click)="oktaAuth.logout()">Logout</button>
+</div>
+
+<div *ngIf="!isAuthenticated">
+  <button (click)="oktaAuth.loginRedirect()">Login</button>
+</div>
+<pb-hero></pb-hero>
+<router-outlet></router-outlet>
+<pb-footer></pb-footer>
