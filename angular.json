@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "personal-budget"
+    }
+  },
+  "defaultProject": "personal-budget",
+  "cli": {
+    "analytics": "89684837-5309-41e6-a6cc-2bf660089a09"
+  }
 }
